@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Student Management UI</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <header class="topbar"><h1>Student Management (UI Only)</h1></header>
+  <main class="container grid">
+    <section class="card">
+      <h2>Add Student</h2>
+      <form onsubmit="return false">
+        <label>Full Name <input type="text" placeholder="e.g., Ali Raza" required/></label>
+        <label>Age <input type="number" min="1" max="120" required/></label>
+        <label>Email <input type="email" placeholder="name@example.com" required/></label>
+        <label>Contact <input type="tel" placeholder="03XXXXXXXXX" minlength="10" maxlength="13"/></label>
+        <label>Address <input type="text" placeholder="House #, Street, City"/></label>
+        <div class="row">
+          <label>Program
+            <select>
+              <option value="BSSE">BS Software Engineering</option>
+              <option value="BSCS">BS Computer Science</option>
+              <option value="BBA">BBA</option>
+            </select>
+          </label>
+          <label>Semester
+            <select>
+              <option>1</option><option>2</option><option>3</option><option>4</option>
+              <option>5</option><option>6</option><option>7</option><option>8</option>
+            </select>
+          </label>
+        </div>
+        <button class="btn" type="submit" title="UI only">Add</button>
+        <p class="note">*This is UI only (no database connected).</p>
+      </form>
+    </section>
+
+    <section class="card">
+      <h2>Students</h2>
+      <div class="table">
+        <div class="thead">
+          <span>Name</span><span>Program</span><span>Semester</span><span>Email</span>
+        </div>
+        <div class="tbody">
+          <div class="row"><span>Sample Student</span><span>BSSE</span><span>4</span><span>sample@umt.edu.pk</span></div>
+          <div class="row"><span>Another Student</span><span>BSCS</span><span>2</span><span>another@mail.com</span></div>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
