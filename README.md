@@ -14,3 +14,5 @@ This project is designed for beginners to understand form structure, input styli
 - CSS3
 
 ## Project Structure
+
+[**Live Demo**](https://rizwanhaiderbloach.github.io/student-form-ui/)
